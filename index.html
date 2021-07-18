@@ -4,28 +4,30 @@
 
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
-  <script src="https://kit.fontawesome.com/2319582ff4.js" crossorigin="anonymous"></script>
   <title>Subaru Projects</title>
   <!-- CSS  -->
   <link href="assets/css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection" />
   <link href="assets/css/style2.css" type="text/css" rel="stylesheet" media="screen,projection" />
   <link href="assets/css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+
+  <!-- Bootsrap icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 </head>
 
 <body id="home" class="scrollspy">
   <a class="btn-to-top btn btn-medium waves-effect white black-text waves-dark tooltipped back-to-top" href="#home"
-    data-position="left" data-delay="50" data-tooltip="Back to top"><i class="far fa-arrow-alt-circle-up"></i></a>
+    data-position="left" data-delay="50" data-tooltip="Back to top"><i class="bi bi-chevron-bar-up"></i></a>
   <!-- Navbar -->
   <div class="navbar-fixed" id="navbar">
     <nav class="nav-index cyan darken-1" style="background-color: white; transition: .3s;">
       <div class=" container">
         <ul id="dropdown1" class="dropdown-content">
-          <li><a href="#!" class="light"><i class="material-icons left">home</i> Home</a></li>
-          <li><a href="#!" class="light"><i class="material-icons left">language</i> Blog</a></li>
-          <li><a href="code/index.html" class="light"><i class="material-icons left">library_books</i> My code</a></li>
+          <li><a href="#!" class="light"><i class="bi bi-house-door-fill left"></i> Home</a></li>
+          <li><a href="#!" class="light"><i class="bi bi-globe2 left"></i> Blog</a></li>
+          <li><a href="code/index.html" class="light"><i class="bi bi-file-earmark-code-fill left"></i> My code</a></li>
         </ul>
         <div class="nav-wrapper">
-          <a href="#" data-activates="slide-out" class="button-collapse black-text"><i class="material-icons">menu</i></a>
+          <a href="#" data-activates="slide-out" class="button-collapse black-text"><i class="bi bi-list"></i></a>
           <a href="#home" class="brand-logo nav-link">
             <span class="hide-on-small-only light">Subaru Projects</span>
             <span class="hide-on-med-and-up">SB</span>
@@ -37,8 +39,8 @@
             <li><a class="nav-link light" href="#contact">Contact Us</a></li>
             <li><a class="nav-link light" href="#portfolio">Portfolio</a></li>
             <!-- Dropdown Trigger -->
-            <li><a class="dropdown-button center-align nav-link light" href="#!" data-activates="dropdown1">Menu<i
-                  class="material-icons left">arrow_drop_down</i></a></li>
+            <li><a class="dropdown-button center-align nav-link light" href="#!" data-activates="dropdown1">
+              <span>Menu</span><i class="bi bi-caret-down-fill right small-icon"></i></a></li>
           </ul>
           <!-- Mobile Nav -->
           <ul id="slide-out" class="side-nav">
@@ -54,14 +56,19 @@
             </li>
             <ul class="collapsible" data-collapsible="accordion">
               <li class="daftar-menu">
-                <div class="collapsible-header waves-effect waves-light black-text grey-text text-darken-4"
-                  style="padding: 8px 20px;"><i class="material-icons cyan-text text-darken-2">home</i>Menu <i
-                    class="material-icons right icos" style=" padding-left: 50%">chevron_right</i></div>
+                <div class="collapsible-header waves-effect waves-light black-text grey-text text-darken-4">
+                  <span class="icon-nav-menu">
+                    <i class="bi bi-house-door-fill cyan-text text-darken-2 left"></i>
+                    <span>Menu</span>
+                  </span>
+                  <i class="material-icons right bi bi-chevron-right nav-chev" style="padding-left: 50%"></i>
+                </div>
+                
                 <div class="collapsible-body menu cyan darken-2">
                   <ul>
                     <li>
                       <a class="white-text" href="home/index.html">
-                        <i class="material-icons left white-text">home</i>
+                        <i class="bi bi-house-door-fill left white-text"></i>
                         Home
                       </a>
                     </li>
@@ -69,7 +76,7 @@
                   <ul>
                     <li>
                       <a class="white-text" href="code/index.html">
-                        <i class="material-icons left white-text">library_books</i>
+                        <i class="bi bi-file-earmark-code-fill left white-text">library_books</i>
                         My Code
                       </a>
                     </li>
@@ -77,16 +84,14 @@
                 </div>
               </li>
             </ul>
-            <li>
-              <div class="divider"></div>
-            </li>
+            <div class="divider div-collapse"></div>
             <li><a class="subheader">Navigasi</a></li>
-            <li><a class="waves-effect mobile" href="#about"><i class="material-icons left">info</i> About</a></li>
-            <li><a class="waves-effect mobile" href="#skills"><i class="material-icons left">grade</i>Skills</a></li>
-            <li><a class="waves-effect mobile" href="#exp"><i class="material-icons left">work</i>Experience</a></li>
-            <li><a class="waves-effect mobile" href="#contact"><i class="material-icons left">contacts</i>Contact Us</a>
+            <li><a class="waves-effect mobile" href="#about"><i class="bi bi-info-circle-fill left">info</i> About</a></li>
+            <li><a class="waves-effect mobile" href="#skills"><i class="bi bi-pie-chart-fill left">grade</i>Skills</a></li>
+            <li><a class="waves-effect mobile" href="#exp"><i class="bi bi-graph-up left">work</i>Experience</a></li>
+            <li><a class="waves-effect mobile" href="#contact"><i class="bi bi-info-circle-fill left">contacts</i>Contact Us</a>
             </li>
-            <li><a class="waves-effect mobile" href="#portfolio"><i class="material-icons left">web </i>Portfolio</a>
+            <li><a class="waves-effect mobile" href="#portfolio"><i class="bi bi-telephone-fill left">web </i>Portfolio</a>
             </li>
           </ul>
         </div>
@@ -128,7 +133,7 @@
                   <img src="assets/img/profilepic_20200321-210.jpg" id="image-profile" alt="foto resmi" class="circle">
           <div class="col m12">
             <a href="http://subaruprojects.epizy.comassets/cv/CV.pdf" class="btn green darken-1 waves-effect waves-light hoverable btn-large"
-              style="border-radius: 30px;">Download CV <i class="material-icons right">description</i>
+              style="border-radius: 30px;">Download CV <i class="bi bi-file-earmark-pdf-fill right"></i>
             </a>
             <p class="flow-text center-align">
               Assalamu'alaikum, Introducing my name Dai jumana Pradha, I am website developer especially in the field of web design and backend. I graduated from SMK 3 Vocational High School majoring in RPL (Software Engineering) in 2019, my experience was that I had an internship at a company called CV.JILBERLIAN The focuses on the installation of the internet network and also making applications or making websites for personal, educational (school) and company profile web. During my internship, I completed various applications or websites from clients that I worked on alone or together with the team.            </p>
@@ -281,14 +286,14 @@
         <div class="col m4 s6">
           <div class="card-panel hoverable center card-contact">
             <a class="contact-link" target="_blank" href="https://www.youtube.com/channel/UCgkN6uLicUVdbf_kk3pr3dg">
-              <i class="fab fa-youtube contact-icons"></i>
+              <i class="bi bi-youtube contact-icons"></i>
               <h5 class="flow-text contact-link">Devonosuke</h5>
           </div>
         </div>
         <div class="col m4 s6">
           <div class="card-panel hoverable center card-contact">
             <a class="contact-link" target="_blank" href="https://www.instagram.com/daipradaa">
-              <i class="fab fa-instagram contact-icons"></i>
+              <i class="bi bi-instagram contact-icons"></i>
               <h5 class="flow-text contact-link">@daipradaa</h5>
             </a>
           </div>
@@ -296,7 +301,7 @@
         <div class="col m4 s6">
           <div class="card-panel hoverable center card-contact">
             <a class="contact-link" target="_blank" href="https://web.facebook.com/DaiJumanaPrada">
-              <i class="fab fa-facebook contact-icons"></i>
+              <i class="bi bi-facebook contact-icons"></i>
               <h5 class="flow-text contact-link">devon prada</h5>
             </a>
           </div>
@@ -304,7 +309,7 @@
         <div class="col m6 s6">
           <div class="card-panel hoverable center card-contact">
             <a class="contact-link" target="_blank" href="tel: 085757063969">
-              <i class="fab fa-whatsapp contact-icons"></i>
+              <i class="bi bi-whatsapp contact-icons"></i>
               <h5 class="flow-text contact-link">085757063969</h5>
             </a>
           </div>
@@ -312,7 +317,7 @@
         <div class="col m6 s12">
           <div class="card-panel hoverable center card-contact">
             <a class="contact-link" target="_blank" href="mailto:rnidevon@gmail.com">
-              <i class="fa fa-envelope contact-icons"></i>
+              <i class="bi bi-envelope contact-icons"></i>
               <h5 class="flow-text contact-link">rnidevon@gmail.com</h5>
             </a>
           </div>
@@ -389,13 +394,13 @@
           <ul class="sosmed-footer">
             <li>
               <a href="https://web.facebook.com/DaiJumanaPrada" target="_blank">
-                <i class="fab fa-facebook"></i>
+                <i class="bi bi-facebook"></i>
               </a>
               <a href="https://www.instagram.com/daipradaa" target="_blank">
-                <i class="fab fa-instagram"></i>
+                <i class="bi bi-instagram"></i>
               </a>
               <a href="mailto:rnidevon@gmail.com" target="_blank">
-                <i class="fas fa-envelope-square"></i>
+                <i class="bi bi-envelope"></i>
               </a>
             </li>
             <hr style="border: 1px solid white" class="left" width="5%">
