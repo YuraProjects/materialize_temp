@@ -130,19 +130,19 @@ ul.right li a:hover{
 	background-image: linear-gradient(to right,#FF708D,#79BDFF 25% 75%,#73F373);
 	z-index: -1;
 }
-#dropdown1 li a{
+#menu-dropdown li a{
 	line-height: 34px;
 	color: #00acc1 ;
 }
-#dropdown1 li{
+#menu-dropdown li{
 	border-bottom: 3px solid white;
 	box-sizing: border-box;
 }
-#dropdown1 li:hover{
+#menu-dropdown li:hover{
 	border-bottom: 3px solid #212121;
 	transition: .5s;
 }
-#dropdown1 li a{
+#menu-dropdown li a{
 	color: #212121;
 }
 a.dropdown-button{
