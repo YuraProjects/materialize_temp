@@ -98,8 +98,6 @@ $(document).ready(function () {
 
 	var $backToTop = $(".back-to-top");
 
-	var $navLink = $("#idnya");
-
 	$(window).on('scroll', function () {
 
 		if ($(this).scrollTop() > 400) {
@@ -111,8 +109,6 @@ $(document).ready(function () {
 			$('.nav-code').removeClass('green');
 
 			$('nav').removeClass('darken-1');
-
-			$navLink.addClass('.nav-color');
 
 			$backToTop.fadeIn();
 

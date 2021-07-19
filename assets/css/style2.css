@@ -102,6 +102,10 @@ ul.right li a:hover{
   filter: opacity(.8);
 }
 
+.slides li img {
+	padding-top: 650px;
+}
+
 /* ====== Bagian Navbar */
 .navbar-fixed{
   z-index: 999;
@@ -171,6 +175,7 @@ a.dropdown-button{
 .nav-chev {
 	float: right;
 	font-size: 12px !important;
+	padding-left: 50%
 }
 .icon-nav-menu {
   float: left;
@@ -178,7 +183,10 @@ a.dropdown-button{
 .userView {
 	margin: 0 !important;
 }
-
+.nav-index {
+	background-color: white;
+	transition: .3s;
+}
 /* ================== Bagian Intoduction */
 .about {
 	padding: 0;
@@ -212,6 +220,20 @@ a.dropdown-button{
 	height: 500px;
 	width: auto;
 }
+
+.php-bar {width: 80%;}
+.css-bar {width: 65%;}
+.js-bar {width: 35%;}
+.bootstrap-bar {width: 60%;}
+.jquery-bar {width: 25%;}
+.material-bar {width: 90%;}
+.ci-bar {width: 75%;}
+.sql-bar {width: 85%;}
+.html-bar {width: 95%;}
+.filmora-bar {width: 90%;}
+.inkscape-bar {width: 46%;}
+.gimp-bar {width: 65%;}
+
 @media screen and (max-width: 600px) {
 	.parallax-container {
 		height: 980px;
@@ -272,6 +294,9 @@ div.card-blog:hover i.contact-icons-blog{
   .card-image img {
 	height: 100%;
   }
+.div-portfolio {
+	padding: 7px;
+}
 
 /* ====== Bagian Footer */
 /* ==================================== Bagian isi footer */
@@ -302,3 +327,15 @@ div.card-blog:hover i.contact-icons-blog{
 	transition: .3s;
 	color: #424242;
   }
+.page-footer {
+	padding-bottom: 0;
+}
+
+.card-panel {
+	padding: 40px;
+	margin: 48px 0;
+	width: 100%;
+}
+.footer-h5 {
+	margin-top: 20px;
+}

@@ -1,12 +1,13 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
   <title>Subaru Projects</title>
-  <!-- CSS  -->
+  <!-- CSS Materialize -->
   <link href="assets/css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  
+  <!-- Own CSS -->
   <link href="assets/css/style2.css" type="text/css" rel="stylesheet" media="screen,projection" />
   <link href="assets/css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
 
@@ -15,34 +16,44 @@
 </head>
 
 <body id="home" class="scrollspy">
-  <a class="btn-to-top btn btn-medium waves-effect white black-text waves-dark tooltipped back-to-top" href="#home"
-    data-position="left" data-delay="50" data-tooltip="Back to top"><i class="bi bi-chevron-bar-up"></i></a>
-  <!-- Navbar -->
+
+  <!-- Back to top button -->
+  <a class="btn-to-top btn btn-medium waves-effect white black-text waves-dark tooltipped back-to-top" href="#home" data-position="left" data-delay="50" data-tooltip="Back to top"><i class="bi bi-chevron-bar-up"></i></a>
+  
+  <!-- **** Navbar Secion ***-->
   <div class="navbar-fixed" id="navbar">
-    <nav class="nav-index cyan darken-1" style="background-color: white; transition: .3s;">
+    <nav class="nav-index cyan darken-1">
       <div class=" container">
-        <ul id="dropdown1" class="dropdown-content">
-          <li><a href="#!" class="light"><i class="bi bi-house-door-fill left"></i> Home</a></li>
-          <li><a href="#!" class="light"><i class="bi bi-globe2 left"></i> Blog</a></li>
-          <li><a href="code/index.html" class="light"><i class="bi bi-file-earmark-code-fill left"></i> My code</a></li>
-        </ul>
         <div class="nav-wrapper">
-          <a href="#" data-activates="slide-out" class="button-collapse black-text"><i class="bi bi-list"></i></a>
+          <!-- Menu Button -->
+          <a href="#" data-activates="slide-out" class="button-collapse nav-link"><i class="bi bi-list"></i></a>
+          <!-- The Logo Brand -->
           <a href="#home" class="brand-logo nav-link">
             <span class="hide-on-small-only light">Subaru Projects</span>
             <span class="hide-on-med-and-up">SB</span>
           </a>
+          <!-- %%% Dekstop Nav %%% -->
           <ul class="right hide-on-med-and-down">
-            <li><a class="nav-link light" id="idnya" href="#about">About</a></li>
+            <li><a class="nav-link light" href="#about">About</a></li>
             <li><a class="nav-link light" href="#skills">Skills</a></li>
             <li><a class="nav-link light" href="#exp">Experience</a></li>
             <li><a class="nav-link light" href="#contact">Contact Us</a></li>
             <li><a class="nav-link light" href="#portfolio">Portfolio</a></li>
-            <!-- Dropdown Trigger -->
-            <li><a class="dropdown-button center-align nav-link light" href="#!" data-activates="dropdown1">
-              <span>Menu</span><i class="bi bi-caret-down-fill right small-icon"></i></a></li>
+            <!-- Dropdown Trigger Menu -->
+            <li>
+              <a class="dropdown-button center-align nav-link light" href="#!" data-activates="menu-dropdown">
+                <span>Menu</span>
+                <i class="bi bi-caret-down-fill right small-icon"></i>
+              </a>
+            </li>
           </ul>
-          <!-- Mobile Nav -->
+          <!-- The Dropdown Menu -->
+          <ul id="menu-dropdown" class="dropdown-content">
+            <li><a href="#!" class="light"><i class="bi bi-house-door-fill left"></i> Home</a></li>
+            <li><a href="#!" class="light"><i class="bi bi-globe2 left"></i> Blog</a></li>
+            <li><a href="code/index.html" class="light"><i class="bi bi-file-earmark-code-fill left"></i> My code</a></li>
+          </ul>
+          <!-- %%% Mobile Nav %%% -->
           <ul id="slide-out" class="side-nav">
             <li>
               <div class="userView">
@@ -61,7 +72,7 @@
                     <i class="bi bi-house-door-fill cyan-text text-darken-2 left"></i>
                     <span>Menu</span>
                   </span>
-                  <i class="material-icons right bi bi-chevron-right nav-chev" style="padding-left: 50%"></i>
+                  <i class="material-icons right bi bi-chevron-right nav-chev"></i>
                 </div>
                 
                 <div class="collapsible-body menu cyan darken-2">
@@ -89,57 +100,61 @@
             <li><a class="waves-effect mobile" href="#about"><i class="bi bi-info-circle-fill left">info</i> About</a></li>
             <li><a class="waves-effect mobile" href="#skills"><i class="bi bi-pie-chart-fill left">grade</i>Skills</a></li>
             <li><a class="waves-effect mobile" href="#exp"><i class="bi bi-graph-up left">work</i>Experience</a></li>
-            <li><a class="waves-effect mobile" href="#contact"><i class="bi bi-info-circle-fill left">contacts</i>Contact Us</a>
-            </li>
-            <li><a class="waves-effect mobile" href="#portfolio"><i class="bi bi-telephone-fill left">web </i>Portfolio</a>
-            </li>
+            <li><a class="waves-effect mobile" href="#contact"><i class="bi bi-info-circle-fill left">contacts</i>Contact Us</a></li>
+            <li><a class="waves-effect mobile" href="#portfolio"><i class="bi bi-telephone-fill left">web </i>Portfolio</a></li>
           </ul>
         </div>
       </div>
     </nav>
   </div>
-  <!-- Slider -->
+
+  <!-- *** Slider Section ***-->
   <div class="slider">
     <ul class="slides">
-            <li>
-        <img src="assets/img/slider/slide_20200321-128.png" style="padding-top: 650px;"> <!-- random image -->
-        <div class="caption center-align">
-          <h1 class="light">Welcome To Subaru Projects web Profile!</h1>
-          <h5 class="light grey-text text-lighten-3 light">Felling good today?</h5>
-        </div>
-            <li>
-        <img src="assets/img/slider/slide_20200326-178.jpg" style="padding-top: 650px;"> <!-- random image -->
-        <div class="caption left-align">
-          <h1 class="light">Never laugh at things you don't know yet</h1>
-          <h5 class="light grey-text text-lighten-3 light">"Devonosuke"</h5>
-        </div>
-            <li>
-        <img src="assets/img/slider/slide_20200326-186.png" style="padding-top: 650px;"> <!-- random image -->
-        <div class="caption right-align">
-          <h1 class="light">Making Big Jobs Small is the Job of a Programmer</h1>
-          <h5 class="light grey-text text-lighten-3 light">"Akasaka Ryunosuke"</h5>
-        </div>
-            </li>
+        <li>
+          <img src="assets/img/slider/slide_20200321-128.png">
+          <div class="caption center-align">
+            <h1 class="light">Welcome To Subaru Projects web Profile!</h1>
+            <h5 class="light grey-text text-lighten-3 light">Felling good today?</h5>
+          </div>
+        </li>
+        <li>
+          <img src="assets/img/slider/slide_20200326-178.jpg">
+          <div class="caption left-align">
+            <h1 class="light">Never laugh at things you don't know yet</h1>
+            <h5 class="light grey-text text-lighten-3 light">"Devonosuke"</h5>
+          </div>
+        </li>
+        <li>
+          <img src="assets/img/slider/slide_20200326-186.png">
+          <div class="caption right-align">
+            <h1 class="light">Making Big Jobs Small is the Job of a Programmer</h1>
+            <h5 class="light grey-text text-lighten-3 light">"Akasaka Ryunosuke"</h5>
+          </div>
+        </li>
     </ul>
   </div>
-  <!-- About Us -->
+
+  <!-- *** About Us Section *** -->
   <section id="about" class="about scrollspy">
     <div class="container">
       <div class="row center-align">
         <h2 class="light grey-text text-darken-3 center-align light">Introduction</h2>
-                  <img src="assets/img/profilepic_20200321-210.jpg" id="image-profile" alt="foto resmi" class="circle">
-          <div class="col m12">
-            <a href="http://subaruprojects.epizy.comassets/cv/CV.pdf" class="btn green darken-1 waves-effect waves-light hoverable btn-large"
-              style="border-radius: 30px;">Download CV <i class="bi bi-file-earmark-pdf-fill right"></i>
-            </a>
-            <p class="flow-text center-align">
-              Assalamu'alaikum, Introducing my name Dai jumana Pradha, I am website developer especially in the field of web design and backend. I graduated from SMK 3 Vocational High School majoring in RPL (Software Engineering) in 2019, my experience was that I had an internship at a company called CV.JILBERLIAN The focuses on the installation of the internet network and also making applications or making websites for personal, educational (school) and company profile web. During my internship, I completed various applications or websites from clients that I worked on alone or together with the team.            </p>
-          </div>
-              </div>
+        <img src="assets/img/profilepic_20200321-210.jpg" id="image-profile" alt="foto resmi" class="circle">
+        <div class="col m12">
+          <a href="http://subaruprojects.epizy.comassets/cv/CV.pdf" class="btn green darken-1 waves-effect waves-light hoverable btn-large" style="border-radius: 30px;">
+              Download CV <i class="bi bi-file-earmark-pdf-fill right"></i>
+          </a>
+
+          <p class="flow-text center-align">
+            Assalamu'alaikum, Introducing my name Dai jumana Pradha, I am website developer especially in the field of web design and backend. I graduated from SMK 3 Vocational High School majoring in RPL (Software Engineering) in 2019, my experience was that I had an internship at a company called CV.JILBERLIAN The focuses on the installation of the internet network and also making applications or making websites for personal, educational (school) and company profile web. During my internship, I completed various applications or websites from clients that I worked on alone or together with the team.
+          </p>
+        </div>
+      </div>
     </div>
   </section>
 
-  <!-- Skills -->
+  <!-- *** Skills Section *** -->
   <div class="parallax-container scrollspy" id="skills">
     <div class="parallax"><img src="assets/img/parallax/qqq.png"></div>
     <h3 class="center white-text light">My Skills</h3>
@@ -150,37 +165,37 @@
             <li>
               <p class="light">PHP Native</p>
               <div class="progress blue lighten-4">
-                <div class="determinate blue" style="width: 80%"></div>
+                <div class="determinate blue php-bar"</div>
               </div>
             </li>
             <li>
               <p class="light">CSS</p>
               <div class="progress blue lighten-4">
-                <div class="determinate blue" style="width: 65%"></div>
+                <div class="determinate blue css-bar"</div>
               </div>
             </li>
             <li>
               <p class="light">Javascript</p>
               <div class="progress blue lighten-4">
-                <div class="determinate blue" style="width: 35%"></div>
+                <div class="determinate blue js-bar"</div>
               </div>
             </li>
             <li>
               <p class="light">Bootstrap</p>
               <div class="progress blue lighten-4">
-                <div class="determinate blue" style="width: 60%"></div>
+                <div class="determinate blue boostrap-bar"</div>
               </div>
             </li>
             <li>
               <p class="light">JQuery</p>
               <div class="progress blue lighten-4">
-                <div class="determinate blue" style="width: 25%"></div>
+                <div class="determinate blue jquery-bar"</div>
               </div>
             </li>
             <li>
               <p class="light">Materialize CSS</p>
               <div class="progress blue lighten-4">
-                <div class="determinate blue" style="width: 90%"></div>
+                <div class="determinate blue material-bar"</div>
               </div>
             </li>
           </ul>
@@ -195,37 +210,37 @@
             <li>
               <p class="light">Codeigniter</p>
               <div class="progress blue lighten-4">
-                <div class="determinate blue" style="width: 75%; "></div>
+                <div class="determinate blue ci-bar"></div>
               </div>
             </li>
             <li>
               <p class="light">MySQL</p>
               <div class="progress blue lighten-4">
-                <div class="determinate blue" style="width: 85%;"></div>
+                <div class="determinate blue sql-bar"></div>
               </div>
             </li>
             <li>
               <p class="light">HTML</p>
               <div class="progress blue lighten-4">
-                <div class="determinate blue" style="width: 95%;"></div>
+                <div class="determinate blue html-bar"></div>
               </div>
             </li>
             <li>
               <p class="light">Editing Video (Filmora)</p>
               <div class="progress blue lighten-4">
-                <div class="determinate blue" style="width: 90%;"></div>
+                <div class="determinate blue filmora-bar"></div>
               </div>
             </li>
             <li>
               <p class="light">Icons Design (Inkscape)</p>
               <div class="progress blue lighten-4">
-                <div class="determinate blue" style="width: 46%;"></div>
+                <div class="determinate blue inkscape-bar"></div>
               </div>
             </li>
             <li>
               <p class="light">Photo Editing (GIMP)</p>
               <div class="progress blue lighten-4">
-                <div class="determinate blue" style="width: 65%;"></div>
+                <div class="determinate blue gimp-bar"></div>
               </div>
             </li>
           </ul>
@@ -233,53 +248,55 @@
       </div>
     </div>
   </div>
-  <!-- Experience -->
-  <section class="contact grey lighten-4   scrollspy" id="exp">
+
+  <!-- *** Experience Section *** -->
+  <section class="contact grey lighten-4 scrollspy" id="exp">
     <div class="container">
       <h3 class="center grey-text text-darken-3 light">My Experience</h3>
       <div class="row">
-                <div class="col m4 s12">
+        <div class="col m4 s12">
           <div class="card hoverable">
             <div class="card-image waves-effect waves-light waves-block">
               <img src="assets/img/exp/exp_20200325-204.jpg" class="activator">
             </div>
             <div class="card-content">
-              <span class="card-title activator grey-text text-darken-4">Rajawali Cargo<i
-                  class="material-icons right">more_vert</i></span>
+              <span class="card-title activator grey-text text-darken-4">Rajawali Cargo<i class="material-icons right">more_vert</i></span>
               <a href="https://rajawalicargo.co.id">Go to website</a>
             </div>
             <div class="card-reveal">
-              <span class="card-title grey-text text-darken-4">Rajawali Cargo <i
-                  class="material-icons right">close</i></span>
-              <p>Rajawali Cargo serves shipping from Palu to all over Indonesia with FAST delivery, GOOD service, with affordable rates. Rajawali Cargo serves land, sea and air shipping.</p>
+              <span class="card-title grey-text text-darken-4">Rajawali Cargo <i class="material-icons right">close</i></span>
+              <p>
+                Rajawali Cargo serves shipping from Palu to all over Indonesia with FAST delivery, GOOD service, with affordable rates Rajawali Cargo serves land, sea and air shipping
+              </p>
             </div>
           </div>
         </div>
-                <div class="col m4 s12">
+        <div class="col m4 s12">
           <div class="card hoverable">
             <div class="card-image waves-effect waves-light waves-block">
               <img src="assets/img/exp/exp_20200325-117.png" class="activator">
             </div>
             <div class="card-content">
-              <span class="card-title activator grey-text text-darken-4">Rajawali Umrah<i
-                  class="material-icons right">more_vert</i></span>
+              <span class="card-title activator grey-text text-darken-4">Rajawali Umrah<i class="material-icons right">more_vert</i></span>
               <a href="http://rajawaliumrah.epizy.com/">Go to website</a>
             </div>
             <div class="card-reveal">
-              <span class="card-title grey-text text-darken-4">Rajawali Umrah <i
-                  class="material-icons right">close</i></span>
-              <p>PT. Rajawali Ashab Mandiri is a company engaged in the field of pilgrimage and pilgrimage which was established in 2008 based in Palu and has been officially licensed.</p>
+              <span class="card-title grey-text text-darken-4">Rajawali Umrah <i class="material-icons right">close</i></span>
+              <p>
+                PT. Rajawali Ashab Mandiri is a company engaged in the field of pilgrimage and pilgrimage which was established in 2008 based in Palu and has been officially licensed.
+              </p>
             </div>
           </div>
         </div>
-              </div>
+      </div>
     </div>
   </section>
-  <!-- Contact -->
+
+  <!-- *** Contact Section *** -->
   <section class="contact scrollspy" id="contact">
     <div class="container">
       <div class="row">
-                <h3 class="grey-text text-darken-3 center">My Contact</h3>
+        <h3 class="grey-text text-darken-3 center">My Contact</h3>
         <div class="col m4 s6">
           <div class="card-panel hoverable center card-contact">
             <a class="contact-link" target="_blank" href="https://www.youtube.com/channel/UCgkN6uLicUVdbf_kk3pr3dg">
@@ -321,47 +338,48 @@
         </div>
       </div>
     </div>
-    </div>
   </section>
-  <!-- Portfolio -->
+
+  <!-- *** Portfolio Section *** -->
   <section class="portfolio grey lighten-4 scrollspy" id="portfolio">
     <div class="container">
       <h3 class="center grey-text text-darken-3">My Portfolio</h3>
       <div class="row">
-        <div class="col m3 s12 hoverable" style="padding: 7px;">
+        <div class="col m3 s12 hoverable div-portfolio">
           <img src="assets/img/gallery/pic/pic_20200325-161.png" data-caption="Landing Page Rajawali Umrah [deskto" class="responsive-img materialboxed">
         </div>
-              <div class="col m3 s12 hoverable" style="padding: 7px;">
+        <div class="col m3 s12 hoverable div-portfolio">
           <img src="assets/img/gallery/pic/pic_20200325-224.png" data-caption="Landing Page Rajawali Umrah-contact" class="responsive-img materialboxed">
         </div>
-              <div class="col m3 s12 hoverable" style="padding: 7px;">
+        <div class="col m3 s12 hoverable div-portfolio">
           <img src="assets/img/gallery/pic/pic_20200325-118.png" data-caption="Landing Page Rajawali Umrah [mobile" class="responsive-img materialboxed">
         </div>
-              <div class="col m3 s12 hoverable" style="padding: 7px;">
+        <div class="col m3 s12 hoverable div-portfolio">
           <img src="assets/img/gallery/pic/pic_20200325-258.png" data-caption="Admin Page Rajawali Umrah [desktop]" class="responsive-img materialboxed">
         </div>
-              <div class="col m3 s12 hoverable" style="padding: 7px;">
+        <div class="col m3 s12 hoverable div-portfolio">
           <img src="assets/img/gallery/pic/pic_20200325-274.png" data-caption="Landing Page Rajawali Cargo [deskto" class="responsive-img materialboxed">
         </div>
-              <div class="col m3 s12 hoverable" style="padding: 7px;">
+        <div class="col m3 s12 hoverable div-portfolio">
           <img src="assets/img/gallery/pic/pic_20200325-288.png" data-caption="Landing Page Rajawali Cargo-Contact" class="responsive-img materialboxed">
         </div>
-              <div class="col m3 s12 hoverable" style="padding: 7px;">
+        <div class="col m3 s12 hoverable div-portfolio">
           <img src="assets/img/gallery/pic/pic_20200325-133.png" data-caption="Landing Page Rajawali Cargo [mobile" class="responsive-img materialboxed">
         </div>
-              <div class="col m3 s12 hoverable" style="padding: 7px;">
+        <div class="col m3 s12 hoverable div-portfolio">
           <img src="assets/img/gallery/pic/pic_20200325-282.png" data-caption="Admin Page Rajawali Cargo [desktop]" class="responsive-img materialboxed">
         </div>
-            </div>
+      </div>
     </div>
   </section>
-  <!-- Footer -->
-  <footer class="page-footer cyan darken-1" style="padding-bottom: 0">
+
+  <!-- *** Footer Section *** -->
+  <footer class="page-footer cyan darken-1">
     <div class="container">
       <div class="row">
-        <div class="col l6 s12" style="padding: 5px;">
+        <div class="col l6 s12">
           <hr style="border: 1px solid white" class="left" width="5%">
-          <div class="card-panel left" style="padding: 40px; margin: 48px 0; width: 100%">
+          <div class="card-panel left">
             <h5 class="black-text">Send email for me:</h5>
             <form action="" >
               <div class="input-field" >
@@ -387,7 +405,7 @@
         </div>
         <div class="col l4 offset-l2 s12 sos-foot">
           <h5>#Akasaka_Devonosuke</h5>
-          <h5 class="white-text" style="margin-top: 20px;"><b>Follow us</b></h5>
+          <h5 class="white-text footer-h5"><b>Follow us</b></h5>
           <ul class="sosmed-footer">
             <li>
               <a href="https://web.facebook.com/DaiJumanaPrada" target="_blank">
@@ -401,15 +419,15 @@
               </a>
             </li>
             <hr style="border: 1px solid white" class="left" width="5%">
-          </ul> <p>Views: 
-          40          </p>
+          </ul>
         </div>
       </div>
     </div>
+
     <div class="footer-copyright">
       <div class="container">
-      Copyright 2020 © SUBARU PROJECTS
-      <a class="grey-text text-lighten-4 right" href="#">Development by Akasaka Devonosuke / Dai Jumana Pradha</a>
+        <span>Copyright 2020 © SUBARU PROJECTS</span>
+        <a class="grey-text text-lighten-4 right" href="#">Development by Akasaka Devonosuke / Dai Jumana Pradha</a>
       </div>
     </div>
   </footer>
@@ -418,5 +436,4 @@
   <script src="assets/js/materialize.min.js"></script>
   <script src="assets/js/init.js"></script>
 </body>
-
 </html>
