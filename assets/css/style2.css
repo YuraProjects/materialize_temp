@@ -107,6 +107,15 @@ ul.right li a:hover{
   z-index: 999;
 }
 
+@media screen and (max-width: 600px) {
+	.caption h1 {
+		font-size: 44px;
+		line-height: 55px;
+		letter-spacing: 2.5px;
+		margin-top: 5px;
+	}
+}
+
 /*=============================================== Navbar */
 .border {
 	top: -200px;
@@ -199,6 +208,15 @@ a.dropdown-button{
   .parallax-container h3{
 	margin-top: 70px;
   }
+.person {
+	height: 500px;
+	width: auto;
+}
+@media screen and (max-width: 600px) {
+	.parallax-container {
+		height: 980px;
+	}
+}
 
 /* ====== Bagian Experience */
 /* ====== Bagian Contact */
