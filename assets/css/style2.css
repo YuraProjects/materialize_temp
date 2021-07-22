@@ -286,6 +286,11 @@ div.card-blog:hover i.contact-icons-blog{
 	transition: .4s;
 	color: snow;
 }
+.card-panel {
+	padding: 20px;
+	margin: 48px 0;
+	width: 100%;
+}
 /* ====== Bagian Portfolio */
 .card-image {
 	height: 100%;
@@ -295,7 +300,9 @@ div.card-blog:hover i.contact-icons-blog{
 	height: 100%;
   }
 .div-portfolio {
-	padding: 7px;
+	padding: 12px !important;
+	margin-top: 12px;
+	margin-bottom: 12px;
 }
 
 /* ====== Bagian Footer */
@@ -329,12 +336,6 @@ div.card-blog:hover i.contact-icons-blog{
   }
 .page-footer {
 	padding-bottom: 0;
-}
-
-.card-panel {
-	padding: 40px;
-	margin: 48px 0;
-	width: 100%;
 }
 .footer-h5 {
 	margin-top: 20px;
