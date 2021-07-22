@@ -93,9 +93,6 @@ ul.right li a:hover{
 .caption h1 {
   text-shadow: 1px 1px 3px rgba(0,0,0,.5);
 }
-.parallax-container {
-  height: 20%;
-}
 
 .parallax img {
   filter: grayscale(1);
@@ -203,9 +200,7 @@ a.dropdown-button{
 #staggered-test li, #staggered-test1 li{
 	opacity: 0;
 }
-.parallax-container {
-	height: 20%;
-  }
+
   .parallax img {
 	filter: grayscale(1);
 	filter: opacity(.8);
@@ -217,6 +212,10 @@ a.dropdown-button{
 .person {
 	height: 500px;
 	width: auto;
+}
+
+.parallax-container {
+	height: auto !important;
 }
 
 .php-bar {width: 80%;}
